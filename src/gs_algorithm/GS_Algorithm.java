@@ -17,7 +17,8 @@ public class GS_Algorithm {
     public static void main(String[] args) {
         driver d=new driver();
         d.execute();
-        d.print_results();
+        d.plot_graph();
+        //d.print_results();
     }
     
 }

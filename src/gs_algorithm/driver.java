@@ -11,7 +11,7 @@ package gs_algorithm;
  */
 public class driver {
     
-    public int test_cases=20;
+    public int test_cases=50;
     public double[][] results;
     public TheAlgorithm a;
     
@@ -22,7 +22,7 @@ public class driver {
     }
     public void execute()
     {
-        int n=500;
+        int n=50;
         for(int i=0;i<test_cases;i++)
         {
             a=new TheAlgorithm(n);
@@ -34,8 +34,8 @@ public class driver {
             results[i][2]=a.steps;
             n+=50;
         }
-            
     }
+   
     public void print_results()
     {
         System.out.println("N     Time  steps");
@@ -43,5 +43,12 @@ public class driver {
         {
             System.out.println(results[i][0]+"   "+results[i][1]+"   "+results[i][2]);
         }
+    }
+    public void plot_graph()
+    {
+        final graph g = new graph("GS-Analysis",results);
+        g.pack();
+        //RefineryUtilities.centerFrameOnScreen(demo);
+        g.setVisible(true);
     }
 }

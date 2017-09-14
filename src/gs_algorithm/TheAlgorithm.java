@@ -63,7 +63,7 @@ public class TheAlgorithm {
                 else
                 {
                     int fia=current[cur_woman];
-                    if(women_preferences[cur_woman][cur_man]>women_preferences[cur_woman][fia])
+                    if(women_preferences[cur_woman][cur_man]<women_preferences[cur_woman][fia])
                     {
                         current[cur_woman]=cur_man;
                         next[cur_man]++;
@@ -87,7 +87,15 @@ public class TheAlgorithm {
         }
             
     }
+    public void print_pairs()
+    {
+        System.out.println("M      W");
     
+        for(int i=1;i<=n;i++)
+        {
+            System.out.println(current[i]+"    "+i);
+    }
+    }
     
     
 }
