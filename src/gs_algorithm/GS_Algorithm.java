@@ -15,9 +15,9 @@ public class GS_Algorithm {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        TheAlgorithm a = new TheAlgorithm(500);
-        a.run_algo();
-        a.print_solution();
+        driver d=new driver();
+        d.execute();
+        d.print_results();
     }
     
 }

@@ -19,6 +19,7 @@ public class TheAlgorithm {
     public int[] next;
     public int[] current;
     public PrepareData pd;
+    public int steps=0;
     
     
     public TheAlgorithm(int number)
@@ -38,6 +39,8 @@ public class TheAlgorithm {
         current=pd.initialize_arrray(current,-1);
         
         
+        
+        
     }
     
     public void run_algo()
@@ -45,6 +48,7 @@ public class TheAlgorithm {
         
         while(!freemen.isEmpty())
         {
+            steps++;
             int cur_man=freemen.removeFirst();
             boolean proposed=false;
             while(!proposed)
