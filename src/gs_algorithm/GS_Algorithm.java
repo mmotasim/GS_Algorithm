@@ -19,6 +19,8 @@ public class GS_Algorithm {
         d.execute();
         d.plot_graph();
         //d.print_results();
+        
+        
     }
     
 }
