@@ -11,7 +11,7 @@ package gs_algorithm;
  */
 public class driver {
     
-    public int test_cases=50;
+    public int test_cases=20;
     public double[][] results;
     public TheAlgorithm a;
     

@@ -48,11 +48,12 @@ public class TheAlgorithm {
         
         while(!freemen.isEmpty())
         {
-            steps++;
+           
             int cur_man=freemen.removeFirst();
             boolean proposed=false;
             while(!proposed)
             {
+                 steps++;
                 int cur_woman=men_preferences[cur_man][next[cur_man]];
                 if(current[cur_woman]==-1)
                 {

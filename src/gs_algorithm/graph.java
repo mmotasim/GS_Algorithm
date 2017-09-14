@@ -48,7 +48,7 @@ public class graph extends ApplicationFrame{
 
         final XYSeriesCollection dataset = new XYSeriesCollection();
         dataset.addSeries(steps);
-       // dataset.addSeries(nsq);      
+       //dataset.addSeries(nsq);      
         return dataset;
         
     }

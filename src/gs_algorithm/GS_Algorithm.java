@@ -20,7 +20,7 @@ public class GS_Algorithm {
         d.plot_graph();
         //d.print_results();
         
+        d.print_results();
         
     }
-    
 }
